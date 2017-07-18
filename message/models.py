@@ -1,7 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-# Create your models here.
 
 class TimestampModel(models.Model):
     class Meta:
@@ -16,11 +15,10 @@ class Message(TimestampModel):
 
 class Like(TimestampModel):
     user = models.ForeignKey(User)
-    message = models.ForeignKey(Message)
-    like= models.BooleanField(default=True)
+    message =models.ForeignKey(Message)
+    like = models.BooleanField()
 
 
 class Follow(TimestampModel):
     followed_user = models.ForeignKey(User, related_name='followed_by')
-    following_user = models.ForeignKey(User,related_name='following')
-
+    following_user = models.ForeignKey(User, related_name='following')

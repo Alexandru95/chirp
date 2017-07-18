@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('created', models.DateTimeField(auto_now_add=True)),
-                ('like', models.BooleanField(default=True)),
+                ('like', models.BooleanField()),
             ],
             options={
                 'abstract': False,
