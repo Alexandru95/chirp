@@ -8,7 +8,7 @@ class RegisterForm(forms.ModelForm):
         model = User
         fields = ['first_name', 'last_name', 'username', 'email', 'password']
         widgets = {
-            "password": forms.PasswordInput
+            "password": forms.PasswordInput(attrs={"class": "password-field"}),
         }
     retype_password = forms.CharField(widget=forms.PasswordInput)
 
@@ -18,8 +18,9 @@ class RegisterForm(forms.ModelForm):
         if password != retype_password:
             raise ValidationError("The two passwords do not match")
         return retype_password
+
     def save(self, commit=True):
-        new_user = super(RegisterForm,self).save(commit=False)
+        new_user = super(RegisterForm, self).save(commit=False)
         new_user.set_password(self.cleaned_data['password'])
         if commit:
             new_user.save()
