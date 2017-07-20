@@ -2,7 +2,7 @@
 {% block content %}
 <form method="post" class="register-form">
     {% csrf_token %}
-    {{ form.non_field_errors }}
+
     		<div class="container">
 			<div class="row main">
 				<div class="panel-heading">
@@ -14,6 +14,7 @@
 				<div class="main-login main-center">
 					<form class="form-horizontal" method="post" action="#">
 						<div class="form-group">
+                            <div class="alert alert-danger" role="alert">{{ form.non_field_errors }}</div>
 							<label for="username"  class="cols-sm-2 control-label">Username</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
