@@ -1,8 +1,13 @@
 h2 {
     color: red;
 }
-.register-form {
-    margin-top: 200px;
+
+.register-form{
+    margin-top:200px;
+}
+
+.error-field {
+    border-color: red;
 }
 
 .chirp {
@@ -14,96 +19,96 @@ h2 {
 }
 
 .row-container {
-margin-top: 100px;
+    margin-top: 100px;
 }
 
-.error-field {
-    border-color: red;
+.mar {
+    margin-top: -100px;
 }
 
-/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
+.marnav {
+    margin-top: 0px;
+    margin-right: 0px;
+}
 
-body, html{
-    height: 100%;
- 	font-family: 'Oxygen', sans-serif;
- 	background-image: url('http://i.imgur.com/Cj1RRYU.jpg') ;
+.lr {
+    margin-top: 8px;
+    margin-right: 18px;
+}
+
+.errorcolor{
+    color: red;
+    font-weight: bold;
+    text-align: left;
+}
+
+.profile-icon {
+    padding: 20px;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+body {
+  background-image: url('http://i.imgur.com/Cj1RRYU.jpg') ;
   background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-position: 0 50px;
     background-attachment: fixed;
+}
+
+.container[role=main] {
+    margin-top: 75px;
+}
+
+.martop{
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.marchirp{
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+.right{
+    width: 90px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 13px;
+    padding: 10px;
+}
+
+.a2{
+    color:white;
+    font-weight: bold;
 
 }
 
-.main{
- 	margin-top: -100px;
+.a2:hover {
+    color:white;
+    text-decoration: none;
 }
 
-h1.title {
-	font-size: 50px;
-	font-family: 'Passion One', cursive;
-	font-weight: 400;
+a:hover {
+    text-decoration: none;
 }
 
-hr{
-	width: 10%;
-	color: #fff;
-}
-
-.form-group{
-	margin-bottom: 15px;
-}
-
-label{
-	margin-bottom: 15px;
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 11px;
-    padding-top: 3px;
-}
-
-.main-login{
- 	background-color: #fff;
-    /* shadows and rounded borders */
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
-}
-
-.main-center{
- 	margin-top: 30px;
- 	margin: 0 auto;
- 	max-width: 330px;
-    padding: 40px 40px;
-
-}
-
-.login-button{
-	margin-top: 5px;
-}
-
-.login-register{
-	font-size: 11px;
-	text-align: center;
-}
-
-.error{
-    color: red;
+.bawld{
     font-weight: bold;
 }
 
-.lay{
-    margin-top:8px;
-    }
+.marleft{
+    margin-right: 10px;
+}
+
+.panel-body  {
+    word-break:break-all
+}
+
+.ac{
+    color:white;
+    font-weight: bold;
+}
