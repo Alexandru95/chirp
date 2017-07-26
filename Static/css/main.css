@@ -73,18 +73,9 @@ body {
     margin-bottom: -15px;
 }
 
-.right{
-    width: 90px;
-    height: 40px;
-    margin-bottom: 20px;
-    margin-left: 13px;
-    padding: 10px;
-}
-
 .a2{
     color:white;
     font-weight: bold;
-
 }
 
 .a2:hover {
@@ -111,4 +102,25 @@ a:hover {
 .ac{
     color:white;
     font-weight: bold;
+}
+
+.buton{
+    height: 40px;
+    margin-bottom: 0px;
+    width: 150px;
+}
+
+.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    height: 50px;
+}
+
+.margine-logo{
+    margin-bottom: 25px;
 }
